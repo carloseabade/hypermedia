@@ -1,0 +1,57 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/carlos.abade/repos/personal/hypermedia/web1.0/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
+*	static/style.css	/^* {$/;"	s
+.alert	static/style.css	/^.alert {$/;"	c
+.alert-danger	static/style.css	/^.alert-danger {$/;"	c
+.alert-danger hr	static/style.css	/^.alert-danger hr {$/;"	s
+.alert-success	static/style.css	/^.alert-success {$/;"	c
+.alert-success hr	static/style.css	/^.alert-success hr {$/;"	s
+404 PAGE NOT FOUND	templates/404.html	/^  <h1>404 PAGE NOT FOUND<\/h1>$/;"	h
+A Demo Contacts Application	templates/index.html	/^  <h2>A Demo Contacts Application<\/h2>$/;"	i
+Add	model/main.go	/^func (c *ContactsSet) Add(contact *Contact) bool {$/;"	f	type:model.ContactsSet	typeref:typename:bool
+All	model/main.go	/^func (c ContactsSet) All() ContactsSet {$/;"	f	type:model.ContactsSet	typeref:typename:ContactsSet
+CONTACTS.APP	templates/index.html	/^  <h1>CONTACTS.APP<\/h1>$/;"	h
+Contact	model/main.go	/^type Contact struct {$/;"	s	package:model
+ContactsSet	model/main.go	/^type ContactsSet []Contact $/;"	t	package:model	typeref:typename:[]Contact
+Email	model/main.go	/^  Email string$/;"	m	struct:model.Contact	typeref:typename:string
+Errors	model/main.go	/^  Errors map[string]string$/;"	m	struct:model.Contact	typeref:typename:map[string]string
+First	model/main.go	/^  First string$/;"	m	struct:model.Contact	typeref:typename:string
+Id	model/main.go	/^  Id string$/;"	m	struct:model.Contact	typeref:typename:string
+Last	model/main.go	/^  Last string$/;"	m	struct:model.Contact	typeref:typename:string
+NewContact	model/main.go	/^func NewContact(first, last, phone, email string) *Contact {$/;"	f	package:model	typeref:typename:*Contact
+NewContactsSet	model/main.go	/^func NewContactsSet() *ContactsSet {$/;"	f	package:model	typeref:typename:*ContactsSet
+Phone	model/main.go	/^  Phone string$/;"	m	struct:model.Contact	typeref:typename:string
+SearchByName	model/main.go	/^func (c ContactsSet) SearchByName(name string) ContactsSet {$/;"	f	type:model.ContactsSet	typeref:typename:ContactsSet
+Validate	model/main.go	/^func (c *Contact) Validate() bool {$/;"	f	struct:model.Contact	typeref:typename:bool
+a	static/style.css	/^a {$/;"	s
+contacts	main.go	/^  contacts = model.NewContactsSet()$/;"	v	package:main
+createMessage	main.go	/^func createMessage(msg string) {$/;"	f	package:main
+email	templates/new.html	/^        <input name="email" id="email" type="email" placeholder="Email" value="{{ .Email }}">$/;"	I
+first_name	templates/new.html	/^        <input name="first_name" id="first_name" type="text" placeholder="First Name" value="{{ /;"	I
+form	static/style.css	/^form {$/;"	s
+getContactsSet	main.go	/^func getContactsSet(query string) model.ContactsSet {$/;"	f	package:main	typeref:typename:model.ContactsSet
+getMessageIfAny	main.go	/^func getMessageIfAny() string {$/;"	f	package:main	typeref:typename:string
+getQuery	main.go	/^func getQuery(r *http.Request) string {$/;"	f	package:main	typeref:typename:string
+getRandomId	model/main.go	/^func getRandomId() string {$/;"	f	package:model	typeref:typename:string
+h2	static/style.css	/^h2 {$/;"	s
+last_name	templates/new.html	/^        <input name="last_name" id="last_name" type="text" placeholder="Last Name" value="{{ .La/;"	I
+main	main.go	/^func main() {$/;"	f	package:main
+main	main.go	/^package main$/;"	p
+message	main.go	/^  message = ""$/;"	v	package:main
+model	model/main.go	/^package model$/;"	p
+phone	templates/new.html	/^        <input name="phone" id="phone" type="text" placeholder="Phone" value="{{ .Phone }}">$/;"	I
+renderTemplate	main.go	/^func renderTemplate(w io.Writer, data any, filename ...string) {$/;"	f	package:main
+search	templates/content.html	/^    <input id="search" type="search" name="q" value="{{ .Query }}"\/>$/;"	I
+table	static/style.css	/^table {$/;"	s
+tbody	static/style.css	/^tbody {$/;"	s
+td	static/style.css	/^th, td {$/;"	s
+th	static/style.css	/^th, td {$/;"	s

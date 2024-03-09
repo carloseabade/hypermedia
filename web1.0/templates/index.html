@@ -1,0 +1,28 @@
+{{ define "layout" }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacts.app</title>
+  <link rel="stylesheet" href="http://localhost:8080/static/style.css">
+</head>
+<body>
+  <h1>CONTACTS.APP</h1>
+  <h2>A Demo Contacts Application</h2>
+  <hr>
+  {{ if .Messages }}
+    {{ template "message" .Messages }}
+  {{ end }}
+  {{ template "content" .Content }}
+</body>
+</html>
+{{ end }}
+
+{{ define "message" }}
+  {{ range . }}
+    <div class="alert alert-{{ .Class }}">
+      {{ .Value }}
+    </div>
+  {{ end }}
+{{ end }}

@@ -1,0 +1,56 @@
+{{ define "content" }}
+
+  {{ $email := "" }}
+  {{ $first := "" }}
+  {{ $last := "" }}
+  {{ $phone := ""}}
+  {{ $error_email := "" }}
+  {{ $error_first := "" }}
+  {{ $error_last := "" }}
+  {{ $error_phone := ""}}
+
+  {{ if .Contact }}
+    {{ $email = .Contact.Email }}
+    {{ $first = .Contact.First }}
+    {{ $last = .Contact.Last }}
+    {{ $phone = .Contact.Phone }}
+  {{ end }}
+
+  {{ if .Error }}
+    {{ $error_email = .Error.Email }}
+    {{ $error_first = .Error.First }}
+    {{ $error_last = .Error.Last }}
+    {{ $error_phone = .Error.Phone }}
+  {{ end }}
+
+  <form action="/contacts/new" method="post">
+    <fieldset>
+      <legend>Contact Values</legend>
+      <p>
+        <label for="email">Email</label>
+        <input name="email" id="email" type="email" placeholder="Email" value="{{ $email }}">
+        <span class="error">{{ $error_email }}</span>
+      </p>
+      <p>
+        <label for="first_name">First Name</label>
+        <input name="first_name" id="first_name" type="text" placeholder="First Name" value="{{ $first }}">
+        <span class="error">{{ $error_first }}</span>
+      </p>
+      <p>
+        <label for="last_name">Last Name</label>
+        <input name="last_name" id="last_name" type="text" placeholder="Last Name" value="{{ $last }}">
+        <span class="error">{{ $error_last }}</span>
+      </p>
+      <p>
+        <label for="phone">Phone</label>
+        <input name="phone" id="phone" type="text" placeholder="Phone" value="{{ $phone }}">
+        <span class="error">{{ $error_phone }}</span>
+      </p>
+      <button>Save</button>
+    </fieldset>
+  </form>
+
+  <p>
+    <a href="/contacts">Back</a>
+  </p>
+{{ end }}
